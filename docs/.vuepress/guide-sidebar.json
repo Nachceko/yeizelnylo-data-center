@@ -1,8 +1,10 @@
-[
-  {
-    "text": "介绍",
-    "link": "/guide/intro/",
-    "icon": "ri:home-line",
-    "badge": { "type": "warning", "text": "推荐" }
-  }
-]
+{
+  "items": [
+    {
+      "text": "介绍",
+      "link": "/guide/intro/",
+      "icon": "ri:home-line",
+      "badge": { "type": "warning", "text": "推荐" }
+    }
+  ]
+}

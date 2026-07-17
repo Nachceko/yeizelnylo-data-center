@@ -6,4 +6,4 @@
 
 import guideSidebarData from './guide-sidebar.json'
 
-export const guidesidebar = guideSidebarData
+export const guidesidebar = guideSidebarData.items

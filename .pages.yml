@@ -118,7 +118,7 @@ content:
     icon: menu
     description: 部署部分的侧边栏配置
     fields:
-      - name: .
+      - name: items
         label: 侧边栏项
         type: object
         list: true
