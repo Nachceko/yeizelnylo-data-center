@@ -1,0 +1,186 @@
+media:
+  input: docs/.vuepress/public
+  output: /
+  categories:
+    - name: Images
+      path: images
+    - name: Assets
+      path: assets
+
+content:
+  - name: home
+    label: 首页
+    type: file
+    path: docs/README.md
+    icon: home
+    fields:
+      - name: pageLayout
+        label: 页面布局
+        type: string
+        default: home
+      - name: externalLinkIcon
+        label: 外部链接图标
+        type: boolean
+        default: false
+      - name: config
+        label: 首页配置
+        type: object
+        list: true
+        fields:
+          - name: type
+            label: 组件类型
+            type: string
+          - name: full
+            label: 全宽
+            type: boolean
+          - name: background
+            label: 背景类型
+            type: string
+          - name: tintPlate
+            label: 色调板
+            type: string
+          - name: hero
+            label: Hero 配置
+            type: object
+            fields:
+              - name: name
+                label: 名称
+                type: string
+              - name: tagline
+                label: 标语
+                type: string
+              - name: text
+                label: 文本
+                type: string
+              - name: image
+                label: 图片
+                type: image
+              - name: actions
+                label: 操作按钮
+                type: object
+                list: true
+                fields:
+                  - name: theme
+                    label: 主题
+                    type: string
+                  - name: text
+                    label: 文本
+                    type: string
+                  - name: link
+                    label: 链接
+                    type: string
+          - name: features
+            label: 特性列表
+            type: object
+            list: true
+            fields:
+              - name: title
+                label: 标题
+                type: string
+              - name: icon
+                label: 图标
+                type: string
+              - name: details
+                label: 详情
+                type: text
+          - name: profile
+            label: 个人资料
+            type: object
+            fields:
+              - name: name
+                label: 名称
+                type: string
+              - name: description
+                label: 描述
+                type: string
+              - name: avatar
+                label: 头像
+                type: image
+
+  - name: navbar
+    label: 导航栏配置
+    type: file
+    path: docs/.vuepress/navbar.ts
+    icon: menu
+    description: 导航栏菜单配置
+
+  - name: collections
+    label: 集合配置
+    type: file
+    path: docs/.vuepress/collections.ts
+    icon: collection
+    description: Collections 和侧边栏配置
+
+  - name: guide
+    label: 指南文档
+    type: collection
+    path: docs/guide
+    icon: book
+    fields:
+      - name: title
+        label: 标题
+        type: string
+        required: true
+      - name: order
+        label: 排序
+        type: number
+      - name: icon
+        label: 图标
+        type: string
+      - name: description
+        label: 描述
+        type: text
+    view:
+      fields:
+        - title
+        - order
+        - icon
+      sort:
+        - by: order
+          direction: asc
+      search:
+        - title
+        - description
+
+  - name: blog
+    label: 博客文章
+    type: collection
+    path: docs/blog
+    icon: edit
+    fields:
+      - name: title
+        label: 标题
+        type: string
+        required: true
+      - name: date
+        label: 发布日期
+        type: date
+      - name: tags
+        label: 标签
+        type: string
+        list: true
+      - name: categories
+        label: 分类
+        type: string
+        list: true
+      - name: cover
+        label: 封面图
+        type: image
+      - name: description
+        label: 描述
+        type: text
+    view:
+      fields:
+        - title
+        - date
+        - tags
+        - categories
+      sort:
+        - by: date
+          direction: desc
+      search:
+        - title
+        - description
+      filters:
+        - field: tags
+        - field: categories
