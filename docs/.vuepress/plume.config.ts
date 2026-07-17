@@ -68,7 +68,7 @@ export default defineThemeConfig({
       layout: 'top-right',
       title: '公告板标题',
       enablePage: (page) => {
-        return page.path === '/guide/'
+        return page.path === '/guide/intro/'
       }
     },
 

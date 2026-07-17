@@ -111,6 +111,49 @@ content:
     icon: collection
     description: Collections 和侧边栏配置
 
+  - name: guide-sidebar
+    label: guide侧边栏配置
+    type: file
+    path: docs/.vuepress/guide-sidebar.json
+    icon: menu
+    description: 部署部分的侧边栏配置
+    fields:
+      - name: .
+        label: 侧边栏项
+        type: object
+        list: true
+        fields:
+          - name: text
+            label: 文本
+            type: string
+            required: true
+          - name: link
+            label: 链接
+            type: string
+            required: true
+          - name: icon
+            label: 图标
+            type: string
+          - name: badge
+            label: 徽章
+            type: object
+            fields:
+              - name: type
+                label: 类型
+                type: select
+                options:
+                  - label: 信息
+                    value: info
+                  - label: 警告
+                    value: warning
+                  - label: 危险
+                    value: danger
+                  - label: 成功
+                    value: success
+              - name: text
+                label: 文本
+                type: string
+
   - name: guide
     label: 指南文档
     type: collection

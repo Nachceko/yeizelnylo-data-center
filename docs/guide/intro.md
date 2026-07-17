@@ -4,18 +4,16 @@ createTime: 2025/08/17 15:19:06
 permalink: /guide/intro/
 copyright:
   author:
-    name: LyraVoid Team
-    url: https://github.com/LyraVoid
+    name: YeizelNylo
 ---
 
 
 ![](https://avatars.githubusercontent.com/u/172878250?v=4)
 
-**欢迎使用Mizuki主题👏!**  
+**test!**  
 
- ==Astro-theme-Mizuki== 是一个基于`Astro`的现代化静态博客模板，具有丰富的功能和美观的设计，无论您是想写 **生活类博客**、**技术类博客**、 或者是 **知识库、系列文档** 等，主题都可以满足您的需求。  
+ ==test== 
 
-如果能给我一个star那将是对我莫大的鼓励。使用这个主题之前，你应该明白它是一个Astro主题，它的基本逻辑离不开Astro，关于如何新建分类，如何新建标签这些问题应该在使用之前就从互联网或官方文档了解详情🔎。  
 
 <CardGrid>
   <RepoCard repo="LyraVoid/Mizuki" />
@@ -23,8 +21,6 @@ copyright:
 </CardGrid>
 
 
-QQ群1007524064 (主题交流群)  
-Discord频道(面向全世界的Mizuki用户): [https://discord.gg/MqW6TcQtVM](https://discord.gg/MqW6TcQtVM)
 
 ::: collapse
 - 不了解Astro?

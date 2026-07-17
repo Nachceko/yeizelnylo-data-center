@@ -1,6 +1,6 @@
 # yeizel-nylo-data-center
 
-The Site is generated using [vuepress](https://vuepress.vuejs.org/) and [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume)
+网站使用 [vuepress](https://vuepress.vuejs.org/) 和 [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume) 构建生成。
 
 ## Install
 
@@ -11,21 +11,17 @@ pnpm i
 ## Usage
 
 ```sh
-# start dev server
+# 启动开发服务
 pnpm docs:dev
-# build for production
+# 构建生产包
 pnpm docs:build
-# preview production build in local
+# 本地预览生产服务
 pnpm docs:preview
-# update vuepress and theme
+# 更新 vuepress 和主题
 pnpm vp-update
 ```
 
-## Documents
+## 文档
 
 - [vuepress](https://vuepress.vuejs.org/)
 - [vuepress-theme-plume](https://theme-plume.vuejs.press/)
-YeizelNylo Data Center | YeizelNylo 数据中心
-https://uapis.cn/api/v1/random/image?category=acg&type=pc
-https://www.dmoe.cc/random.php
-https://t.alcy.cc/moez

@@ -25,6 +25,7 @@
  * 通过 `defineCollection` 定义的 collection 配置，应该填入 `defineCollections` 中
  */
 import { defineCollection, defineCollections } from 'vuepress-theme-plume'
+import { guidesidebar } from './guide-sidebar'
 
 const blog = defineCollection({
   // post 类型，这里用于实现 博客功能
@@ -64,22 +65,13 @@ const guide = defineCollection({
       collapsed: false,
       items: [
         { text: '介绍', link: 'intro', icon: 'ri:information-line'},
-        { text: '快速开始', link: 'get-started', icon: 'ri:rocket-line' },
+      //  { text: '快速开始', link: 'get-started', icon: 'ri:rocket-line' },
         {
           text: '部署',
           icon: 'ri:book-open-line',
           prefix: '/guide/',
           collapsed: true,
-          items: [
-            { text: 'Vercel', link: 'deploy/Vercel', icon: 'ri:vercel-line' ,badge: { type: 'warning', text: '推荐' } },
-            { text: 'Netlify', link: 'deploy/Netlify', icon: 'ri:cloud-line' },
-            { text: 'GitHub Pages', link: 'deploy/Github', icon: 'ri:github-line' ,badge: { type: 'danger', text: '不推荐' }},
-            { text: 'Cloudflare Pages', link: 'deploy/Cloudflare', icon: 'ri:cloud-line'},
-            { text: 'EdgeOne Pages', link: 'deploy/Edge', icon: 'ri:cloud-line', badge: { type: 'warning', text: '推荐' } },
-            { text: '服务器部署', link: 'deploy/server', icon: 'ri:server-line', badge: { type: 'info', text: '入门' } },
-            { text: 'Docker部署', link: 'deploy/docker', icon: 'ri:ship-line' },
-            { text: '本地构建', link: 'deploy/local', icon: 'ri:computer-line', badge: { type: 'info', text: '入门' } },
-          ],
+          items: guidesidebar
         },
       ],
     },
