@@ -4,7 +4,8 @@
       "text": "介绍",
       "link": "/guide/intro/",
       "icon": "ri:home-line",
-      "badge": { "type": "warning", "text": "推荐" }
+      "badge_type": "warning",
+      "badge_text": "推荐"
     }
   ]
 }

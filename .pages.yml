@@ -135,22 +135,15 @@ content:
             label: 图标
             type: string
             description: 'Iconify 图标格式，如 ri:home-line。预览图标: https://icon-sets.iconify.design/'
-          - name: badge
-            label: 徽章
-            type: object
-            fields:
-              - name: type
-                label: 类型
-                type: select
-                default: info
-                options:
-                  - info
-                  - warning
-                  - danger
-                  - success
-              - name: text
-                label: 文本
-                type: string
+          - name: badge_type
+            label: 徽章类型
+            type: string
+            default: info
+            description: '可选值: info(信息), warning(警告), danger(危险), success(成功)'
+          - name: badge_text
+            label: 徽章文本
+            type: string
+            description: '如: 推荐, 不推荐, 入门等'
 
   - name: guide
     label: 指南文档

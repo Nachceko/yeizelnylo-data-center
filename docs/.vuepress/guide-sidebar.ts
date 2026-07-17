@@ -6,4 +6,12 @@
 
 import guideSidebarData from './guide-sidebar.json'
 
-export const guidesidebar = guideSidebarData.items
+export const guidesidebar = guideSidebarData.items.map(item => ({
+  text: item.text,
+  link: item.link,
+  icon: item.icon,
+  badge: item.badge_type && item.badge_text ? {
+    type: item.badge_type,
+    text: item.badge_text
+  } : undefined
+}))
