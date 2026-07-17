@@ -134,6 +134,7 @@ content:
           - name: icon
             label: 图标
             type: string
+            description: 'Iconify 图标格式，如 ri:home-line。预览图标: https://icon-sets.iconify.design/'
           - name: badge
             label: 徽章
             type: object
@@ -141,15 +142,16 @@ content:
               - name: type
                 label: 类型
                 type: select
+                default: info
                 options:
-                  - label: 信息
-                    value: info
-                  - label: 警告
-                    value: warning
-                  - label: 危险
-                    value: danger
-                  - label: 成功
-                    value: success
+                  - value: info
+                    label: 信息
+                  - value: warning
+                    label: 警告
+                  - value: danger
+                    label: 危险
+                  - value: success
+                    label: 成功
               - name: text
                 label: 文本
                 type: string
