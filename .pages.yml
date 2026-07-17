@@ -144,14 +144,10 @@ content:
                 type: select
                 default: info
                 options:
-                  - value: info
-                    label: 信息
-                  - value: warning
-                    label: 警告
-                  - value: danger
-                    label: 危险
-                  - value: success
-                    label: 成功
+                  - info
+                  - warning
+                  - danger
+                  - success
               - name: text
                 label: 文本
                 type: string
