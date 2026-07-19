@@ -1,6 +1,6 @@
 ---
 title: 更新日志
-createTime: 2026/07/19 19:56:21
+createTime: 2026/07/19 21:12:11
 permalink: /guide/changelog/
 copyright:
   author:
@@ -9,6 +9,34 @@ copyright:
 ---
 
 ## 2026-07-19
+
+- **docs: 更新作者URL** [6592a7d](https://github.com/Nachceko/yeizelnylo-data-center/commit/6592a7dacdb65c0adb223fe12f88fdc7e0d07e03)
+  - 将文档中所有提到的作者YeizelNylo的URL更新为https://github.com/tb-miao
+  - 在README.md中，更新了作者YeizelNylo的URL。
+  - 在docs/guide/changelog.md中，更新了作者YeizelNylo的URL。
+  - 在docs/guide/intro.md中，更新了作者YeizelNylo的URL。
+  - 在docs/guide/jc/mcjava-windows-install.md中，更新了作者YeizelNylo的URL。
+  - 在docs/guide/tags.md中，更新了作者YeizelNylo的URL。
+
+- **Merge pull request #1 from Nachceko/new** [ad22744](https://github.com/Nachceko/yeizelnylo-data-center/commit/ad22744d730726e3d40b8bae3ea8288c26693a9d)
+  - 合并
+
+- **docs: 更新README文档和相关配置文件** [d51cb2a](https://github.com/Nachceko/yeizelnylo-data-center/commit/d51cb2a404a3bae115ffb0f293ec534c0dde9a33)
+  - 正式版V1.0.0
+  - 在README.md中添加了单独生成changelog的命令 `pnpm changelog`。
+  - 在README.md中更新了安装依赖的命令顺序。
+  - 在client.ts中导入并注册了BulletinContent组件。
+  - 在collections.ts中添加了标签索引和更新日志的侧边栏配置。
+  - 在guide-sidebar.json中将徽章的文本 `NEW` 修改为 `新`。
+  - 在plume.config.ts中更新了站点页脚的信息，并修改了bulletin的标题。
+  - 新增了BulletinContent.vue组件，用于自定义公告内容。
+  - 在custom.css中引入了新的字体，并添加了二次元风格的全局样式。
+  - 新增了changelog.md文档，记录了项目的更新日志。
+  - 更新了intro.md文档的标题和内容，添加了新的GitHub仓库链接。
+  - 新增了tags.md文档，用于展示标签索引。
+  - 新增了generate-changelog-git.js脚本，用于从Git仓库生成changelog。
+  - 更新了nodemon.json中的watch列表，添加了对plume.config.ts的监视。
+  - 更新了package.json中的scripts，添加了changelog命令，并在dev和build命令中调用该脚本以自动生成changelog。
 
 - **feat(admin): 添加管理后台功能** [9608d08](https://github.com/Nachceko/yeizelnylo-data-center/commit/9608d0899dd7e70d913db40e80d6ce37f24a0ecc)
   - 添加本地文件API服务器启动批处理脚本 `api-server-run.bat`，用于检查Node.js环境并启动API服务器。

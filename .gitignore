@@ -3,3 +3,6 @@ node_modules
 # vuepress的缓存文件夹
 docs/.vuepress/.cache/
 docs/.vuepress/.temp/
+
+# 生成的静态文件
+docs/.vuepress/dist/
