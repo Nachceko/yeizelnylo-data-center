@@ -187,9 +187,6 @@ content:
       - name: body
         label: 正文内容
         type: markdown
-        required: false
-        minimal: true
-        preview: true
     view:
       fields:
         - title
@@ -201,6 +198,7 @@ content:
       search:
         - title
         - description
+    preview: '{{permalink}}'
 
   - name: blog
     label: 博客文章
@@ -252,9 +250,6 @@ content:
       - name: body
         label: 正文内容
         type: markdown
-        required: false
-        minimal: true
-        preview: true
     view:
       fields:
         - title
@@ -270,3 +265,4 @@ content:
       filters:
         - field: tags
         - field: categories
+    preview: '{{permalink}}'
