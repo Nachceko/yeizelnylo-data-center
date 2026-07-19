@@ -29,6 +29,3 @@ pnpm vp-update
 
 - [vuepress](https://vuepress.vuejs.org/)
 - [vuepress-theme-plume](https://theme-plume.vuejs.press/)
-
-
-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

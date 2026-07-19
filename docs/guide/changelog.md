@@ -5,6 +5,7 @@ permalink: /guide/changelog/
 copyright:
   author:
     name: YeizelNylo
+    url: https://github.com/tb-miao
 ---
 
 ## 2026-07-19
