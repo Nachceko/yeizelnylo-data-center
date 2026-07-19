@@ -139,7 +139,7 @@ content:
             label: 徽章类型
             type: string
             default: info
-            description: '可选值: info(信息), warning(警告), danger(危险), success(成功)'
+            description: '可选值: info(信息), warning(警告), danger(危险), tip'
           - name: badge_text
             label: 徽章文本
             type: string
@@ -164,6 +164,29 @@ content:
       - name: description
         label: 描述
         type: text
+      - name: createTime
+        label: 创建时间
+        type: datetime
+      - name: permalink
+        label: 永久链接
+        type: string
+      - name: copyright
+        label: 版权信息
+        type: object
+        fields:
+          - name: author
+            label: 作者
+            type: object
+            fields:
+              - name: name
+                label: 作者名称
+                type: string
+              - name: link
+                label: 作者链接
+                type: string
+      - name: body
+        label: 正文内容
+        type: markdown
     view:
       fields:
         - title
@@ -189,6 +212,12 @@ content:
       - name: date
         label: 发布日期
         type: date
+      - name: createTime
+        label: 创建时间
+        type: datetime
+      - name: permalink
+        label: 永久链接
+        type: string
       - name: tags
         label: 标签
         type: string
@@ -203,6 +232,23 @@ content:
       - name: description
         label: 描述
         type: text
+      - name: copyright
+        label: 版权信息
+        type: object
+        fields:
+          - name: author
+            label: 作者
+            type: object
+            fields:
+              - name: name
+                label: 作者名称
+                type: string
+              - name: link
+                label: 作者链接
+                type: string
+      - name: body
+        label: 正文内容
+        type: markdown
     view:
       fields:
         - title

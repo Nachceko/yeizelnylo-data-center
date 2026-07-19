@@ -1,11 +1,11 @@
 {
   "items": [
     {
-      "text": "介绍",
-      "link": "/guide/intro/",
-      "icon": "ri:home-line",
+      "text": "Minecraft Java",
+      "link": "/guide/jc/mcjava-windows-install",
+      "icon": "ri:rocket-line",
       "badge_type": "warning",
-      "badge_text": "推荐"
+      "badge_text": "NEW"
     }
   ]
 }

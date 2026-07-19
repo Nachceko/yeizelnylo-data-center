@@ -10,12 +10,14 @@
     "docs:build": "vuepress build docs --clean-cache --clean-temp",
     "docs:dev": "vuepress dev docs",
     "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
+    "docs:dev:watch": "nodemon --exec \"vuepress dev docs\" --signal SIGTERM",
     "docs:preview": "http-server docs/.vuepress/dist",
     "vp-update": "pnpm dlx vp-update"
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.30",
     "http-server": "^14.1.1",
+    "nodemon": "3.1.14",
     "typescript": "^6.0.3",
     "vue": "^3.5.34",
     "vuepress": "2.0.0-rc.30",

@@ -1,0 +1,11 @@
+{
+  "watch": [
+    "docs/.vuepress/collections.ts",
+    "docs/.vuepress/guide-sidebar.ts",
+    "docs/.vuepress/guide-sidebar.json"
+  ],
+  "ext": "ts,json",
+  "ignore": ["node_modules/", "docs/.vuepress/.cache/", "docs/.vuepress/.temp/", "docs/.vuepress/dist/"],
+  "delay": "1000",
+  "verbose": false
+}
