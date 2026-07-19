@@ -7,10 +7,11 @@
   "author": "Nachceko <2307057760@qq.com>",
   "license": "MIT",
   "scripts": {
-    "docs:build": "vuepress build docs --clean-cache --clean-temp",
-    "docs:dev": "vuepress dev docs",
+    "changelog": "node generate-changelog-git.js",
+    "docs:build": "node generate-changelog-git.js && vuepress build docs --clean-cache --clean-temp",
+    "docs:dev": "node generate-changelog-git.js && vuepress dev docs",
     "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
-    "docs:dev:watch": "nodemon --exec \"vuepress dev docs\" --signal SIGTERM",
+    "docs:dev:watch": "nodemon --exec \"node generate-changelog-git.js && vuepress dev docs\" --signal SIGTERM",
     "docs:preview": "http-server docs/.vuepress/dist",
     "vp-update": "pnpm dlx vp-update"
   },

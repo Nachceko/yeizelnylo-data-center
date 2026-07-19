@@ -11,6 +11,10 @@ pnpm i
 ## Usage
 
 ```sh
+# 单独生成 changelog
+pnpm changelog
+# 安装依赖
+pnpm i
 # 启动开发服务
 pnpm docs:dev
 # 构建生产包
@@ -25,3 +29,6 @@ pnpm vp-update
 
 - [vuepress](https://vuepress.vuejs.org/)
 - [vuepress-theme-plume](https://theme-plume.vuejs.press/)
+
+
+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
