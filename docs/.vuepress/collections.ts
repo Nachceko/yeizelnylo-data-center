@@ -65,7 +65,11 @@ const guide = defineCollection({
       collapsed: false,
       items: [
         { text: '介绍', link: 'intro', icon: 'ri:information-line'},
-      //  { text: '快速开始', link: 'get-started', icon: 'ri:rocket-line' },
+        {
+          text: "标签索引",
+          link: "/guide/tags",
+          icon: "ri:price-tag-3-line"
+        },
         {
           text: '教程',
           icon: 'ri:book-open-line',
@@ -73,6 +77,11 @@ const guide = defineCollection({
           collapsed: true,
           items: guidesidebar
         },
+        {
+          text: '更新日志',
+          link: '/guide/changelog',
+          icon: 'ri:calendar-line',
+        }
       ],
     },
   ]

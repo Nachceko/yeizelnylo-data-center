@@ -41,7 +41,7 @@ export default defineThemeConfig({
 
   /* 站点页脚 */
   footer: {
-    message: 'Powered by YeizelNylo Data Center & Theme by <a href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
+    message: 'Powered by YDC | YeizelNylo Data Center',
     copyright: 'Copyright © 2026-present <a href="https://github.com/Nachceko">Nachceko</a>',
   },
 
@@ -66,7 +66,7 @@ export default defineThemeConfig({
    */
     bulletin: {
       layout: 'top-right',
-      title: '公告板标题',
+      title: '公告喵~',
       enablePage: (page) => {
         return page.path === '/guide/intro/'
       }

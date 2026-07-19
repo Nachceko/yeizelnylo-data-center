@@ -1,3 +1,7 @@
+/* 二次元字体引入 */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
 :root {
   /** 主题颜色 */
 
@@ -54,6 +58,126 @@
   --vp-c-text-2: rgba(235, 235, 245, 0.6);
   --vp-c-text-3: rgba(235, 235, 245, 0.38);
   */
+}
+
+/* ===== 二次元全局样式 ===== */
+
+/* 全局字体 - 圆润可爱的二次元字体 */
+body, .vp-doc, .vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4, .vp-doc h5, .vp-doc h6 {
+  font-family: 'M PLUS Rounded 1c', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+/* 标题样式 - 添加可爱的下划线 */
+.vp-doc h1, .vp-doc h2, .vp-doc h3 {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.vp-doc h1::after, .vp-doc h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-2), transparent);
+  border-radius: 2px;
+}
+
+/* 链接样式 - 可爱的悬停效果 */
+.vp-doc a {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.vp-doc a:hover {
+  transform: translateY(-1px);
+}
+
+/* 代码块样式 - 圆角可爱风 */
+.vp-doc code {
+  border-radius: 6px !important;
+}
+
+/* 提示框样式 - 二次元风格 */
+.custom-block {
+  border-radius: 12px !important;
+  border-left-width: 4px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* 按钮样式 - 圆润可爱 */
+.vp-button {
+  border-radius: 20px !important;
+  transition: all 0.3s ease;
+}
+
+.vp-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 118, 163, 0.3);
+}
+
+/* 卡片样式 - 二次元圆角 */
+.vp-card, .card-grid-item {
+  border-radius: 16px !important;
+  transition: all 0.3s ease;
+}
+
+.vp-card:hover, .card-grid-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(212, 118, 163, 0.2);
+}
+
+/* 导航栏样式 */
+.vp-nav {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+[data-theme="dark"] .vp-nav {
+  background-color: rgba(27, 27, 31, 0.85) !important;
+}
+
+/* 侧边栏样式 - 圆润可爱 */
+.vp-sidebar {
+  border-radius: 0 16px 16px 0;
+}
+
+.vp-sidebar .sidebar-link {
+  border-radius: 8px;
+  margin: 2px 8px;
+  transition: all 0.2s ease;
+}
+
+.vp-sidebar .sidebar-link:hover {
+  background-color: var(--vp-c-brand-soft);
+  transform: translateX(4px);
+}
+
+/* 滚动条样式 - 二次元粉色 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg-soft);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--vp-c-brand-2), var(--vp-c-brand-3));
+}
+
+/* 选中文字样式 */
+::selection {
+  background-color: var(--vp-c-brand-2);
+  color: #fff;
 }
 
 /* Aside Links Styles */
