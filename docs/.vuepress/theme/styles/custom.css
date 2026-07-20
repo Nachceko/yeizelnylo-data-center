@@ -128,15 +128,6 @@ body, .vp-doc, .vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4, .vp-doc h5, .vp-d
   box-shadow: 0 8px 24px rgba(212, 118, 163, 0.2);
 }
 
-/* 导航栏样式 */
-.vp-nav {
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.85) !important;
-}
-
-[data-theme="dark"] .vp-nav {
-  background-color: rgba(27, 27, 31, 0.85) !important;
-}
 
 /* 侧边栏样式 - 圆润可爱 */
 .vp-sidebar {

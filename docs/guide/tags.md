@@ -1,79 +1,42 @@
 ---
 title: 标签索引
 permalink: /guide/tags/
-createTime: 2026/07/19 18:43:30
+createTime: 2026/07/20 13:29:04
 copyright:
   author:
     name: YeizelNylo
     url: https://github.com/tb-miao
 ---
 
-<script setup>
-import { computed, ref, onMounted } from 'vue'
-import { useRoute } from 'vuepress/client'
-
-const route = useRoute()
-const guidePosts = ref([])
-
-// 定义 guide 文件夹下的所有文档（手动维护，确保 tags 能正确显示）
-const guideDocs = [
-  {
-    title: 'Minecraft Java 安装指南',
-    path: '/guide/jc/mcjava-windows-install/',
-    tags: ['Minecraft Java'],
-  },
-  // 添加更多文档时，在这里添加对应的条目
-]
-
-onMounted(() => {
-  guidePosts.value = guideDocs
-})
-
-const tagsTree = computed(() => {
-  const tree = {}
-  
-  guidePosts.value.forEach(post => {
-    const tags = post.tags || []
-    tags.forEach(tag => {
-      if (!tree[tag]) {
-        tree[tag] = []
-      }
-      tree[tag].push({
-        title: post.title,
-        path: post.path,
-      })
-    })
-  })
-  
-  return tree
-})
-
-const sortedTags = computed(() => {
-  return Object.keys(tagsTree.value).sort()
-})
-</script>
-
 ## 标签索引
 
 以下是 guide 文件夹内所有文档的标签分类：
 
-<div v-if="sortedTags.length === 0" class="empty-tags">
-  <p>暂无标签</p>
+<div class="tags-tree">
+
+## Minecraft Java (2)
+
+<div class="tag-posts">
+  <div class="tag-post-item">
+    <span class="post-category">jc\mcjava-windows-install.md</span>
+    <a href="/guide/jc/mcjava-windows-install/" class="post-link">Minecraft Java 安装指南</a>
+  </div>
+  <div class="tag-post-item">
+    <span class="post-category">note\mcjava-command.md</span>
+    <a href="/guide/note/mcjava-command/" class="post-link">Minecraft Java 指令笔记</a>
+  </div>
 </div>
 
-<div v-else class="tags-tree">
-  <div v-for="tag in sortedTags" :key="tag" class="tag-group">
-    <h3 class="tag-name">
-      <span class="tag-icon">️</span>
-      {{ tag }}
-      <span class="tag-count">({{ tagsTree[tag].length }})</span>
-    </h3>
-    <ul class="tag-posts">
-      <li v-for="post in tagsTree[tag]" :key="post.path" class="tag-post-item">
-        <a :href="post.path" class="post-link">{{ post.title }}</a>
-      </li>
-    </ul>
+
+## Minecraft Java Command (1)
+
+<div class="tag-posts">
+  <div class="tag-post-item">
+    <span class="post-category">note\mcjava-command.md</span>
+    <a href="/guide/note/mcjava-command/" class="post-link">Minecraft Java 指令笔记</a>
   </div>
+</div>
+
 </div>
 
 <style scoped>
@@ -96,6 +59,8 @@ const sortedTags = computed(() => {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--vp-c-brand);
 }
 
 .tag-icon {
@@ -109,37 +74,52 @@ const sortedTags = computed(() => {
 }
 
 .tag-posts {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .tag-post-item {
-  padding: 0.5rem 0;
-  padding-left: 1.5rem;
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: var(--vp-c-bg);
+  border-radius: 6px;
+  border-left: 3px solid var(--vp-c-brand-light);
+  transition: all 0.2s;
 }
 
-.tag-post-item::before {
-  content: '├─';
-  position: absolute;
-  left: 0;
-  color: var(--vp-c-text-3);
+.tag-post-item:hover {
+  border-left-color: var(--vp-c-brand);
+  background: var(--vp-c-bg-soft);
+  transform: translateX(4px);
 }
 
-.tag-post-item:last-child::before {
-  content: '─';
+.post-category {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background: var(--vp-c-brand);
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  font-weight: 500;
+  text-transform: uppercase;
+  min-width: 3rem;
+  text-align: center;
+  flex-shrink: 0;
 }
 
 .post-link {
-  color: var(--vp-c-brand);
+  color: var(--vp-c-text-1);
   text-decoration: none;
+  font-weight: 500;
+  flex: 1;
   transition: color 0.2s;
 }
 
 .post-link:hover {
-  color: var(--vp-c-brand-dark);
-  text-decoration: underline;
+  color: var(--vp-c-brand);
 }
 
 .empty-tags {

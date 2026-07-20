@@ -8,10 +8,11 @@
   "license": "MIT",
   "scripts": {
     "changelog": "node generate-changelog-git.js",
-    "docs:build": "node generate-changelog-git.js && vuepress build docs --clean-cache --clean-temp",
-    "docs:dev": "node generate-changelog-git.js && vuepress dev docs",
+    "generate:tags": "node generate-tags.js",
+    "docs:build": "node generate-changelog-git.js && node generate-tags.js && vuepress build docs --clean-cache --clean-temp",
+    "docs:dev": "node generate-changelog-git.js && node generate-tags.js && vuepress dev docs",
     "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
-    "docs:dev:watch": "nodemon --exec \"node generate-changelog-git.js && vuepress dev docs\" --signal SIGTERM",
+    "docs:dev:watch": "nodemon --exec \"node generate-changelog-git.js && node generate-tags.js && vuepress dev docs\" --signal SIGTERM",
     "docs:preview": "http-server docs/.vuepress/dist",
     "vp-update": "pnpm dlx vp-update"
   },

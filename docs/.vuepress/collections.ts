@@ -26,6 +26,7 @@
  */
 import { defineCollection, defineCollections } from 'vuepress-theme-plume'
 import { guidesidebar } from './guide-sidebar'
+import { notesidebar } from './note-sidebar'
 
 const blog = defineCollection({
   // post 类型，这里用于实现 博客功能
@@ -71,18 +72,25 @@ const guide = defineCollection({
           icon: "ri:price-tag-3-line"
         },
         {
-          text: '教程',
-          icon: 'ri:book-open-line',
-          prefix: '/jc/',
-          collapsed: true,
-          items: guidesidebar
-        },
-        {
           text: '更新日志',
           link: '/guide/changelog',
           icon: 'ri:calendar-line',
         }
       ],
+    },
+    {
+      text: '教程',
+      icon: 'ri:book-open-line',
+      prefix: '/jc/',
+      collapsed: true,
+      items: guidesidebar
+    },
+    {
+      text: '笔记',
+      icon: 'ri:book-2-fill',
+      prefix: '/note/',
+      collapsed: true, // 是否折叠
+      items: notesidebar,
     },
   ]
 })

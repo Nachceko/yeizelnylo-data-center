@@ -1,0 +1,11 @@
+{
+  "items": [
+    {
+    "text": "Minecraft Java Command",
+    "link": "/guide/note/mcjava-command/",
+    "icon": "ri:command-fill",
+    "badge_type": "warning",
+    "badge_text": "新"
+    }
+   ]
+}

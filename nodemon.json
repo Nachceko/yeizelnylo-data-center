@@ -3,6 +3,8 @@
     "docs/.vuepress/collections.ts",
     "docs/.vuepress/guide-sidebar.ts",
     "docs/.vuepress/guide-sidebar.json",
+    "docs/.vuepress/note-sidebar.ts",
+    "docs/.vuepress/note-sidebar.json",
     "docs/.vuepress/plume.config.ts"
   ],
   "ext": "ts,json",
