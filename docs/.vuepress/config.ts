@@ -40,12 +40,7 @@ export default defineUserConfig({
     editLink: true,
     lastUpdated: true,
     contributors: true,
-    changelog: true,
-
-    plugins: {
-      // 如果您在此处直接声明为 true，则表示开发环境和生产环境都启用该功能
-      git: process.env.NODE_ENV === 'production'
-    },
+    changelog: false,
 
     /**
      * 编译缓存，加快编译速度

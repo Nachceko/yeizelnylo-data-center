@@ -1,12 +1,31 @@
 ---
 title: 更新日志
-createTime: 2026/07/20 12:56:34
+createTime: 2026/07/21 09:21:19
 permalink: /guide/changelog/
 copyright:
   author:
     name: YeizelNylo
     url: https://github.com/tb-miao
 ---
+
+## 2026-07-20
+
+- **📃docs: 更新README和tags文档，添加新功能** [2dd2c98](https://github.com/Nachceko/yeizelnylo-data-center/commit/2dd2c98eba201a810f8ca8442139eb13bbe6fbe3)
+  - 在README.md中添加了单独生成changelog的命令 `pnpm changelog`。
+  - 在README.md中更新了安装依赖的命令顺序。
+  - 在docs/.vuepress/collections.ts中添加了标签索引和更新日志的侧边栏配置。
+  - 在docs/.vuepress/note-sidebar.json中新增了笔记侧边栏配置。
+  - 在docs/.vuepress/note-sidebar.ts中实现了笔记侧边栏的动态导入。
+  - 在docs/.vuepress/config.ts中取消了include注释以启用导入其他markdown文件内容。
+  - 在docs/.vuepress/theme/styles/custom.css中删除了导航栏样式，添加了二次元风格的全局样式。
+  - 在docs/guide/tags.md中简化了标签索引的静态HTML结构，更新了createTime。
+  - 在docs/guide/note/mcjava-command.md中新增了Minecraft Java指令笔记文档。
+  - 在generate-tags.js中实现了自动从guide文件夹生成tags索引的功能。
+  - 在nodemon.json中更新了watch列表，添加了对note-sidebar.ts和note-sidebar.json的监视。
+  - 在package.json中新增了generate:tags命令，并在docs:build和docs:dev命令中调用该脚本以自动生成tags索引。
+  - 在package.json中更新了docs:dev:watch命令以包含generate:tags脚本的执行。
+  - 修复了手机端导航栏不显示和无法点击BUG。
+  - Closes #123
 
 ## 2026-07-19
 
