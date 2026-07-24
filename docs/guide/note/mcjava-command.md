@@ -8,7 +8,6 @@ tags:
 copyright:
   author:
     name: YeizelNylo
-    url: https://github.com/tb-miao
 ---
 ## 前言
 

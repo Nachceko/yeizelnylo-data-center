@@ -12,6 +12,7 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
+import { linkPreviewVuePressPlugin } from './theme/plugins/md-link-preview'
 
 export default defineUserConfig({
   base: '/',
@@ -22,10 +23,20 @@ export default defineUserConfig({
   head: [
     // 配置站点图标
     ['link', { rel: 'icon', type: 'image/png', href: 'https://avatars.githubusercontent.com/u/172878250?v=4' }],
+    // JSDelivr源（可能更新不及时）
+    // 引入《蔚蓝档案》风格点击特效
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/VanillaNahida/BA-Spark-Cursor/ba-spark/spark.css' }],
+    // 引入《蔚蓝档案》风格鼠标指针
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/VanillaNahida/BA-Spark-Cursor/BlueArchiveCursor/cursor.css' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/gh/VanillaNahida/BA-Spark-Cursor/ba-spark/spark.js', defer: '' }],
   ],
 
   bundler: viteBundler(),
   shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
+
+  plugins: [
+    linkPreviewVuePressPlugin(),
+  ],
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */

@@ -93,7 +93,6 @@ createTime: ${new Date().toLocaleString('zh-CN', {
 copyright:
   author:
     name: YeizelNylo
-    url: https://github.com/tb-miao
 ---
 
 ## 标签索引

@@ -1,11 +1,10 @@
 ---
 title: 标签索引
 permalink: /guide/tags/
-createTime: 2026/07/21 09:21:20
+createTime: 2026/07/24 13:00:49
 copyright:
   author:
     name: YeizelNylo
-    url: https://github.com/tb-miao
 ---
 
 ## 标签索引
@@ -34,6 +33,16 @@ copyright:
   <div class="tag-post-item">
     <span class="post-category">note\mcjava-command.md</span>
     <a href="/guide/note/mcjava-command/" class="post-link">Minecraft Java 指令笔记</a>
+  </div>
+</div>
+
+
+## 网易版我的世界 (1)
+
+<div class="tag-posts">
+  <div class="tag-post-item">
+    <span class="post-category">jc\wymc-all-install.md</span>
+    <a href="/guide/jc/wymc-all-install/" class="post-link">网易版我的世界安装</a>
   </div>
 </div>
 

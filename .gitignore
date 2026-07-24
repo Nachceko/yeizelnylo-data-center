@@ -6,3 +6,6 @@ docs/.vuepress/.temp/
 
 # 生成的静态文件
 docs/.vuepress/dist/
+
+# 生成的build-info.json文件
+docs/.vuepress/public/build-info.json

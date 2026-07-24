@@ -3,6 +3,11 @@
     {
       "text": "Minecraft Java",
       "link": "/guide/jc/mcjava-windows-install",
+      "icon": "ri:rocket-line"
+    },
+    {
+      "text": "网易Minecraft",
+      "link": "/guide/jc/wymc-all-install",
       "icon": "ri:rocket-line",
       "badge_type": "warning",
       "badge_text": "新"

@@ -9,7 +9,9 @@
   "scripts": {
     "changelog": "node generate-changelog-git.js",
     "generate:tags": "node generate-tags.js",
-    "docs:build": "node generate-changelog-git.js && node generate-tags.js && vuepress build docs --clean-cache --clean-temp",
+    "generate:docs": "node generate-docs.js",
+    "generate:build-info": "node generate-build-info.js",
+    "docs:build": "node generate-changelog-git.js && node generate-tags.js && node generate-build-info.js && vuepress build docs --clean-cache --clean-temp",
     "docs:dev": "node generate-changelog-git.js && node generate-tags.js && vuepress dev docs",
     "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
     "docs:dev:watch": "nodemon --exec \"node generate-changelog-git.js && node generate-tags.js && vuepress dev docs\" --signal SIGTERM",

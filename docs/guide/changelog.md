@@ -1,12 +1,19 @@
 ---
 title: 更新日志
-createTime: 2026/07/21 09:21:19
+createTime: 2026/07/24 13:00:48
 permalink: /guide/changelog/
 copyright:
   author:
     name: YeizelNylo
-    url: https://github.com/tb-miao
 ---
+
+## 2026-07-21
+
+- **📃docs: 更新站点配置、文档时间戳并新增多项文档功能** [4bb8e11](https://github.com/Nachceko/yeizelnylo-data-center/commit/4bb8e11fc0fd48215dccede3699a8522baa4f488)
+  - 1. 更新tags.md和changelog.md的创建时间
+  - 2. 关闭changelog插件并简化配置
+  - 3. 新增changelog记录，包含添加标签生成脚本、侧边栏配置、Minecraft指令笔记文档等多项更新
+  - 4. 修复手机端导航栏显示点击问题
 
 ## 2026-07-20
 

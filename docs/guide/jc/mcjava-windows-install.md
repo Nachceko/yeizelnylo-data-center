@@ -7,14 +7,12 @@ tags:
 copyright:
   author:
     name: YeizelNylo
-    url: https://github.com/tb-miao
 ---
-v0.0.7
-
 ## 所需条件：
 
 1. 一台可以正常运行的电脑。
 2. 会使用浏览器。
+3. 是Windows操作系统。
 
 ## ==第一步==：安装Java
 

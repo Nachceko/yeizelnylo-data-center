@@ -5,7 +5,6 @@ permalink: /guide/intro/
 copyright:
   author:
     name: YeizelNylo
-    url: https://github.com/tb-miao
 ---
 
 
@@ -26,3 +25,6 @@ copyright:
 <LinkCard title="👉点击去我的Github主页？" href="https://github.com/tb-miao">
 
 </LinkCard>
+
+::: link-preview https://docs.nachceko.qzz.io
+:::
